@@ -48,6 +48,8 @@ var preview = new Box.ContentPreview();
       cache: false,
       success: function(response) {
         console.log("success:" + JSON.stringify(response));
+        $(".preview-container").text("Hallo" + response.token);
+        //response.token;
       },
       error: function(err) {
         console.log(JSON.stringify(err));
